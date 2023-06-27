@@ -1,3 +1,7 @@
 #!/usr/bin/env bash
 #Script was use to fix a not function a we server
 sudo service apache2 restart
+
+#Run Apache on the holbertonschool/265-0 Docker container
+echo "ServerName localhost" >> /etc/apache2.conf
+service apache2 start
